@@ -2,6 +2,15 @@
 // vs code formatter no need to select.
 // linux Ubuntu april 20,2020.
 
+// Alt + Shift + I works in windows
+
+
+
+// Select Format Document from the menu:
+// Windows: Alt Shift F.
+// Linux: Alt Shift I.
+// macOS: ⌥ ⇧ F.
+
 
 import 'dart:convert';
 import 'dart:core';
