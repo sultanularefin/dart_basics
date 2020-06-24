@@ -36,6 +36,10 @@ var CATEGORY_ITEMS_LIST3 =[
   print('foodImageURL3: ${Uri.encodeComponent(foodImageURL3)}');
 
 
+  print('foodImageURL3: ${Uri.decodeComponent(foodImageURL3)}');
+  // foodImageURL3
+
+
   
 });
 

@@ -3,6 +3,20 @@
 import 'dart:core';
 // import 'dart:convert';
 
+
+class Customer {
+  String name;
+  int age;
+
+  Customer(this.name, this.age);
+
+  @override
+  String toString() {
+    return '{ ${this.name}, ${this.age} }';
+  }
+}
+
+
 main() {
 
 
@@ -73,10 +87,27 @@ var CATEGORY_ITEMS_LIST3 =[
 
 
 
+List list = [];
+list.add(Customer('Jack', 23));
+list.add(Customer('Adam', 27));
+list.add(Customer('Katherin', 25));
 
 
+var map1 = Map.fromIterable(list, key: (e) => e.name, value: (e) => e.age);
+print('map1 : $map1 and length ${map1.length}');
 
+
+int len = 6;
+print('len/2 : ${(len/2).toInt()}');
+
+    print('len: ${len.toInt()}');
+    int middlePoint = (len%2 ==1)?
+    (len/2).ceil():(len/2).toInt();
+
+    print('middlePoint: $middlePoint');
 
 }
+
+
 
 
