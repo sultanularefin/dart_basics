@@ -243,9 +243,11 @@ main() {
   // print('user3: $user3');
 
   orderedItems.forEach((oneFood) {
-    /* Map<String, dynamic> */ var userX = jsonDecode(jsonEncode(orderedItems));
+    var t = orderedItems;
 
-    print('Howdy,userX[0][\'quantity\'] ${userX[0]['quantity']}!');
+    //  var userX = jsonDecode(jsonEncode(orderedItems));
+
+    print('Howdy,t[0][\'quantity\'] ${t[0]['quantity']}!');
   });
 
   // print('We sent the verification link to ${user['email']}.');
@@ -255,4 +257,18 @@ main() {
 
     print('Howdy,userX2[0][\'quantity\'] ${userX2[0]['quantity']}!');
   });
+
+
+list<dynamic> orderedItems =orderedItems: [{unitPrice: 10.5, quantity: 3,
+ selectedCheeses: [{image: cheese/juusto.png, ingredientAmountByUser: 0, name: juusto,
+  type: 0}], name: Kasvis Ruis Iskender, discount: 0.0,
+   ingredients: [{image: extra-ingredietns/paprika.png, ingredientAmountByUser: 1, name: Paprika, type: 0},
+    {image: extra-ingredietns/ananas.png, ingredientAmountByUser: 1, name: Ananas, type: 0}, 
+    {image: extra-ingredietns/rukola.jpeg, ingredientAmountByUser: 1, name: Rucola, type: 0},
+     {image: extra-ingredients/salaatti.png, ingredientAmountByUser: 1, name: Salaatti, type: 0}, 
+     {image: extra-ingredietns/tomaatti.png, ingredientAmountByUser: 1, name: Tomaatti, type: 0}],
+      foodImage: kala-kasvis-pictures/kasvis-ruis-iskender.jpg, defaultSauces: 
+[{image: sauces/pizzakastike.jpg, ingredientAmountByUser: 0, name: pizzakastike, type: 0}],
+ category: Kala & Kasvismenu, oneFoodTypeTotalPrice: 31.5}]
+
 }
