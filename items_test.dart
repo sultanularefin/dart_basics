@@ -249,4 +249,10 @@ main() {
   });
 
   // print('We sent the verification link to ${user['email']}.');
+
+  orderedItems.forEach((oneFood) {
+    /* Map<String, dynamic> */ var userX2 = orderedItems;
+
+    print('Howdy,userX2[0][\'quantity\'] ${userX2[0]['quantity']}!');
+  });
 }
