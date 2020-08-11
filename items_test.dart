@@ -258,17 +258,71 @@ main() {
     print('Howdy,userX2[0][\'quantity\'] ${userX2[0]['quantity']}!');
   });
 
+  List<dynamic> orderedItems55 = [
+    {
+      'unitPrice': 10.5,
+      'quantity': 3,
+      'selectedCheeses': [
+        {
+          'image': 'cheese/juusto.png',
+          'ingredientAmountByUser': 0,
+          'name': 'juusto',
+          'type': 0
+        }
+      ],
+      'name': 'Kasvis Ruis Iskender',
+      'discount': 0.0,
+      'ingredients': [
+        {
+          'image': 'extra-ingredietns/paprika.png',
+          'ingredientAmountByUser': 1,
+          'name': 'Paprika',
+          'type': 0
+        },
+        {
+          'image': 'extra-ingredietns/ananas.png',
+          'ingredientAmountByUser': 1,
+          'name': 'Ananas',
+          'type': 0
+        },
+        {
+          'image': 'extra-ingredietns/rukola.jpeg',
+          'ingredientAmountByUser': 1,
+          'name': 'Rucola',
+          'type': 0
+        },
+        {
+          'image': 'extra-ingredients/salaatti.png',
+          'ingredientAmountByUser': 1,
+          'name': 'Salaatti',
+          'type': 0
+        },
+        {
+          'image': 'extra-ingredietns/tomaatti.png',
+          'ingredientAmountByUser': 1,
+          'name': 'Tomaatti',
+          'type': 0
+        }
+      ],
+      'foodImage': 'kala-kasvis-pictures/kasvis-ruis-iskender.jpg',
+      'defaultSauces': [
+        {
+          'image': 'sauces/pizzakastike.jpg',
+          'ingredientAmountByUser': 0,
+          'name': 'pizzakastike',
+          'type': 0
+        }
+      ],
+      'category': 'Kala & Kasvismenu',
+      'oneFoodTypeTotalPrice': 31.5
+    }
+  ];
 
-list<dynamic> orderedItems =orderedItems: [{unitPrice: 10.5, quantity: 3,
- selectedCheeses: [{image: cheese/juusto.png, ingredientAmountByUser: 0, name: juusto,
-  type: 0}], name: Kasvis Ruis Iskender, discount: 0.0,
-   ingredients: [{image: extra-ingredietns/paprika.png, ingredientAmountByUser: 1, name: Paprika, type: 0},
-    {image: extra-ingredietns/ananas.png, ingredientAmountByUser: 1, name: Ananas, type: 0}, 
-    {image: extra-ingredietns/rukola.jpeg, ingredientAmountByUser: 1, name: Rucola, type: 0},
-     {image: extra-ingredients/salaatti.png, ingredientAmountByUser: 1, name: Salaatti, type: 0}, 
-     {image: extra-ingredietns/tomaatti.png, ingredientAmountByUser: 1, name: Tomaatti, type: 0}],
-      foodImage: kala-kasvis-pictures/kasvis-ruis-iskender.jpg, defaultSauces: 
-[{image: sauces/pizzakastike.jpg, ingredientAmountByUser: 0, name: pizzakastike, type: 0}],
- category: Kala & Kasvismenu, oneFoodTypeTotalPrice: 31.5}]
+  print('orderedItems55: $orderedItems55');
 
+  orderedItems55.forEach((oneFood) {
+    /* Map<String, dynamic> */ var userX2 = oneFood;
+
+    print('oneFood[\'category\'] ${oneFood['category']}!!');
+  });
 }
